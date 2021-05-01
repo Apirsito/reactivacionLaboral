@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+</head>
+<body>
+	<!--HEADER--> <div class="container-fluid "> <nav class="navbar navbar-expand-md navbar-light"> <a class="navbar-brand" href="index.html"><img src="logo.jpg" width="80" height="80"  class="d-inline-block mx-5 my-2" alt=""></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse"> <ul class="navbar-nav mx-md-2"> <li class="nav-item my-auto"> <a class="btn btn-sm btn-primary bg-azul-2 border border-white btn-block " href="index.html">inicio</a> </li> <li class="nav-item mx-2"> <a class="nav-link btn-block btn" href="encuentraProfesional.html" style="color: #1a3761">Profesionales</a> </li> <li class="nav-item mx-2"> <a class="nav-link btn-block btn" href="encuentraPublicaProducto.html" style="color: #1a3761">Productos</a> </li> <li class="nav-item mx-2"> <a class="nav-link btn-block btn" href="revisar.html" style="color: #1a3761">BLOG</a> </li> <li class="nav-item mx-2"> <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"class="btn badge-pill bg-azul-2 border border-white  text-white btn-block">Ingresar</button> </li> <li class="nav-item mx-2"> <button type="button" data-toggle="modal" data-target="#exampleModal5" data-whatever="@mdo"class="btn badge-pill bg-diego border border-white  text-white btn-block">Registrarse</button> </li> <div class="dropdown"> <button class="btn dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Idioma </button> <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item bandera1" href="#">ESP</a> <a class="dropdown-item bandera2" href="#">ENG</a> </div> </div> </ul> </div> </nav> </div> <!--- modal--ingreso---> <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog modal-xl"> <div class="modal-content m-0 p-0"> <div class="modal-body m-0 p-0"> <div class="container m-0 p-0"> <div class="row col-12 bg-light m-0 p-0 "> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5"><br> <div class="row col-md-8 mx-auto mt-5 justify-content-md-start justify-content-center "> <div class="text-center mt-5"> <h3 class="titulo-4 ">Inicio de sesión</h3> </div> <form id="frmLogin" name="frmLogin"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable text-left pb-2 pl-1 pr-1"> <label class="h6 red font-bold">Usuario</label> <input type="text" id="txtUsername" name="txtUsername" class="form-control form-control-sm" placeholder="Usuario"> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable text-left pb-2 pl-1 pr-1"> <label class="h6 font-bold ">Contraseña</label> <input type="password" id="txtPassword" name="txtPassword" class="form-control form-control-sm" placeholder="Contraseña"> </div> </form> </div> <div class="row col-12 align-items-center mx-auto"> <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 btn-group align-items-center "> <a href=""><img src="img/botonG.png" class="img-fluid"></a> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 btn-group align-items-center "> <a href=""><img src="img/botonF.png" class="img-fluid"></a> </div> </div> <div class="row justify-content-center"> <div class="col-7"> <a href="perfilUltimo.html" class="col-12 btn btn-block boton mt-2 mx-auto py-2" name="btnLogin" >INGRESAR</a> </div> </div> <div class="row"> <div class="col-12 text-center mt-3"> Olvidaste tu contraseña? <button type="button" class="btn btn-sm  h6 font-bold   text-warning" data-toggle="modal" data-target="#exampleModal4">Click aqui </button> </div> <div class="col-12 text-center mb-4"> No tienes cuenta? <a href="#"><span class="btn-sm  h6 font-bold  text-warning" data-toggle="modal" data-target="#exampleModal5"> Registrate</span></a> </div> </div> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-none d-md-block bg-login"> </div> </div> </div> </div> </div> </div> </div> <!-- modal recuperar contraseña--> <!-- Modal --> <div class="modal fade " id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog modal-lg  modal-dialog-centered " role="document"> <div class="modal-content border-0 shadow"> <div class="modal-header bg-diego2 text-white"> <h5 class="modal-title" id="exampleModalLabel">Recuperar contraseña</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="text-white" aria-hidden="true">&times;</span> </button> </div> <div class="modal-body"> <form> <div class="form-group row"> <label for="inputEmail3" class="col-md-4 col-form-label titulo-4">Correo electronico</label> <div class="col-md-8"> <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> </div> </div> </form> <h6 class="titulo-4"> se enviara un link a su correo para la recuperación de la contraseña</h6> </div> <div class="modal-footer"> <button type="button" class="btn btn-sm text-white bg-diego2 mx-auto text-center px-2" data-dismiss="modal">Enviar</button> </div> </div> </div> </div> <!--cierra modal recuperar contraseña--> <!--- modal--Registro---> <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog modal-xl"> <div class="modal-content m-0 p-0"> <div class="modal-header m-0 p-0"> <div class="modal-title" id="exampleModalLabel"><img src="img/datosPersonales.png" class="img-fluid "> </div> <button type="button" class="close my-md-auto mx-2" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div> <div class="modal-body m-0 p-0"> <div class="container m-0 p-0"> <div class="tab-content" id="pills-tabContent"> <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab"> <!--Registro--> <div > <div class="container"> <div class="row "> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 my-5"> <div class="row justify-content-center"> <form class="col-10" id="frmLogin" name="frmLogin"> <div class="text-center mb-4 mt-5"> <h2 class="titulo-4">REGISTRO</h2> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Nombres</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 "> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Apellidos</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Correo electronico</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Celular</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3">											    <label for="exampleFormControlSelect1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Tipo de usuario</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <select class="form-control" id="exampleFormControlSelect1"> <option></option> <option> proveedores de productos sst</option> <option> proveedores de servicios sst</option> <option> Tecnologos/técnicos SST</option> <option> Empresas que requieren cumplir con el sst</option> </select> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Usuario</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputPassword3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Contraseña</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="password" class="form-control" id="inputPassword3"> </div> </div> <div class="row col-12 align-items-center mx-auto"> <div class="col-12 col-xs-12 col-sm-12 col-md-122 col-lg-6 col-xl-6 btn-group align-items-center mx-auto my-1"> <a href="" class="btn-block"><img src="img/botonG.png" class="img-fluid"></a> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-122 col-lg-6 col-xl-6 btn-group align-items-center mx-auto my-1"> <a href=""><img src="img/botonF.png" class="img-fluid"></a> </div> </div> </form> </div> <div class="row mt-2 justify-content-end mr-3"> <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label border border-info" for="customCheck1">Acepto terminos y condiciones</label> </div> </div> <div class="row justify-content-end mr-3"> <div class="col-5"> <button data-toggle="modal" data-target="#exampleModalDatos" class=" nav-link tabs btn btn-block btn-default boton mt-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false"  name="btnLogin">Continuar <span class="glyphicon glyphicon-search"></span> </button> </div> </div> </div> <div class="col-none col-xs-none col-sm-none col-md-12 col-lg-5 col-xl-5 bg-login-r"> </div> </div> </div> </div> <!--cierra registro--> <!-- Modal --> <div class="modal fade" id="exampleModalDatos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-header  bg-diego2"> <h5 class="modal-title text-white" id="exampleModalLabel">Completa tus datos</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div> <div class="modal-body"> <form class="col-10 mx-auto" id="frmLogin" name="frmLogin"> <div class="text-center mb-4 mt-5 mx-auto"> <h4 class="titulo-4 ">ya estas a un paso de terminar tu registro, termina estos campos</h4> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Pais</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 "> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Departamento</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Ciudad</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Genero</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3">											    <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Dominio</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> </form> </div> <div class="modal-footer"> <button type="button" class="btn bg-diego2 text-white">Aceptar</button> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <!--- cierra modal--Registro---> <!--TERMINA EL HEADER -->
+
+<div class="container">
+	
+<div class="row   d-flex justify-content-center text-center ">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo basico</strong></h2>
+	</div>
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="index.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">index</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="quienesSomos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">quienesSomos</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="videoTuto.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">videoTuto</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="contactenos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">contactenos</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="encuentraServicio.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">encuentraServicio</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="encuentraPublicaProducto.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">encuentraPublicaProducto</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="perfilUltimo.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">perfilUltimo</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="blog.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">blog</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="usoAdecuadoMaquinaPesada.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">usoAdecuadoMaquinaPesada</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="headerUsuarioIngresado.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">headerUsuarioIngresado</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="preguntasFrecuentes.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">preguntasFrecuentes</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo perfil empresa</strong></h2>
+	</div>
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="perfilEmpresa.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">perfilEmpresa</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="perfilAnalitics.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">perfilAnalitics</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo perfil proveedor</strong></h2>
+	</div>
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="perfilProveedor.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">perfilProveedor</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="comoMeVeoYo.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">comoMeVeoYo</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="calificacionPerfil.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">calificacionPerfil</button>  </a></div>  
+</div>
+<div class="col-12">
+	<h2 class="text-center mx-auto my-4"><strong>Modulo cotizaciones</strong></h2>
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="Crear-cotizaciones.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">Crear-cotizaciones</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="misCotizaciones.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">misCotizaciones</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="buscarCotizaciones.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">buscarCotizaciones</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+	<h2 class="text-center mx-auto my-4"><strong>Modulo paginas comerciales</strong></h2>
+</div>
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioEmpresasProveedoras.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioEmpresasProveedoras</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="form-producto-servicio.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">form-producto-servicio</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioProducto.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioProducto</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="mensajeConfirmacion.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">mensajeConfirmacion</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioServicio.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioServicio</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="perfilPaginaComercial.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">perfilPaginaComercial</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="serviciosComprar.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">serviciosComprar</button>  </a></div>  
+
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo autoevaluacion</strong></h2>
+	</div>
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioEmpresas.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioEmpresas</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="evaluacionInicialSG-SST.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">evaluacionInicialSG-SST</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="realizarDiagnostico.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">realizarDiagnostico</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="calificacionInicial.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">calificacionInicial</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="calificacionInicial2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">calificacionInicial2</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="calificacionInicialFinal.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">calificacionInicialFinal</button>  </a></div>  
+</div>
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo plan de mejoramiento</strong></h2>
+	</div>
+
+
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="perfilAnalitics.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">perfilAnalitics__modal-plan de mejoramiento</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioPlanDeMejoramiento.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioPlanDeMejoramiento</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planMejoramientoAnual.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planMejoramientoAnual</button>  </a></div>  
+</div>
+
+
+
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="medicionYSeguimientoPlanDeMejoramiento.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">medicionYSeguimientoPlanDeMejoramiento</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="analisisDatosPlanMejoramiento.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">analisisDatosPlanMejoramiento</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planMejoramientoAnualTablaFinal1.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planMejoramientoAnualTablaFinal1</button>  </a></div>  
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planMejoramientoSGGT.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planMejoramientoSGGT</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planMejoramientoAnualTablaFinal2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planMejoramientoAnualTablaFinal2</button>  </a></div>  
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo plan anual de trabajo</strong></h2>
+	</div>
+
+
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioEmpresas.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioEmpresas</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planTrabajoAnual.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planTrabajoAnual</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioPlanDeTrabajoAnual.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioPlanDeTrabajoAnual</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planTrabajoAnualTabla.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planTrabajoAnualTabla</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="medicionYSeguimientoPlanDeTrabajoAnual.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">medicionYSeguimientoPlanDeTrabajoAnual</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="analisisDatosPlanTrabajoAnual.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">analisisDatosPlanTrabajoAnual</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planTrabajoAnualTablaFinal1.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planTrabajoAnualTablaFinal1</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planTrabajoAnualSG-SST.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planTrabajoAnualSG-SST</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="planTrabajoAnualTablaFinal2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">planTrabajoAnualTablaFinal2</button>  </a></div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo interacciones</strong></h2>
+	</div>
+
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="interaccionEntreUsuarios.html.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">interaccionEntreUsuarios.html</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="webinarMostrarProximosYEventosPasados.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">webinarMostrarProximosYEventosPasados</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="webinar-sola.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">webinar-sola</button>  </a></div>  
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="Webinar.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">Webinar</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="forosMostrar.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">forosMostrar</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="forosParticipar.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">forosParticipar</button>  </a></div>  
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="forosEnviar.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">forosEnviar</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="gruposInteraccion.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">gruposInteraccion</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="grupoInteraccionSola.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">grupoInteraccionSola</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="chat-temaResiduosOrganicos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">chat-temaResiduosOrganicos</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="chat.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">chat</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="chatPublicos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">chatPublicos</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="usuariosBaneados.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">usuariosBaneados</button>  </a></div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo biblioteca SST</strong></h2>
+	</div>
+
+
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="bibliotecaSST.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">bibliotecaSST</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="bibliotecaSSTBuscar.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">bibliotecaSSTBuscar</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioDocumentos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioDocumentos</button>  </a></div>  
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="bibliotecaSSTLogueado.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">bibliotecaSSTLogueado</button>  </a></div>  
+</div>
+
+<div class="row   d-flex justify-content-center text-center">
+
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo consejos practicos</strong></h2>
+	</div>
+
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="consejosPracticos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">consejosPracticos</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioConsejosPracticos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioConsejosPracticos</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="consejosPracticosPenultimo.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">consejosPracticosPenultimo</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="buscarConsejos.html.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">buscarConsejos.html</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="finalConsejosPracticos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">finalConsejosPracticos</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo preguntale al experto</strong></h2>
+	</div>
+	<div class="col-12">
+		<h3 class="text-center mx-auto my-4 text-danger"><strong>PROXIMAMENTE</strong></h3>
+	</div>
+	
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo material didactico</strong></h2>
+	</div>
+
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="materialDidactico.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">materialDidactico</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioMaterialDidactico1.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioMaterialDidactico1</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosCreados.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosCreados</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursos2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursos2</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursos3.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursos3</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosEnEjecucion.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosEnEjecucion</button>  </a></div>  
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosTerminados.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosTerminados</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosVideos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursos2</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosPdf.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosPdf</button>  </a></div> 
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+	 
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluaciones.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluaciones</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluaciones2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluaciones2</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesCursosCreados.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesCursosCreados</button>  </a></div>  
+</div>
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+	
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesMisEvaluaciones.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesMisEvaluaciones</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesMisEvaluaciones2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesMisEvaluaciones2</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioMaterialDidactico2.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioMaterialDidactico2</button>  </a></div>  
+</div>
+
+
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+	
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesMisVideos.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesMisVideos</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="formularioMaterialDidactico3.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">formularioMaterialDidactico3</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesInfografias.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesInfografias</button>  </a></div>  
+</div>
+
+
+
+
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesMisPresentaciones.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesMisPresentaciones</button>  </a></div>  
+<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-1 "><a  href="cursosMisEvaluacionesMisotros.html"><button type="button" class="btn btn-block badge-pill  border-white text-white bg-diego ">cursosMisEvaluacionesMisotros</button>  </a></div>  
+</div>
+
+
+
+<div class="row   d-flex justify-content-center text-center">
+
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo publicacion y recuperacion de contraseña</strong></h2>
+	</div>
+	<div class="col-12">
+		<h3 class="text-center mx-auto my-4 text-danger"><strong>PROXIMAMENTE</strong></h3>
+	</div>
+	
+</div>
+
+
+<div class="row   d-flex justify-content-center text-center">
+
+	<div class="col-12">
+		<h2 class="text-center mx-auto my-4"><strong>Modulo PDF</strong></h2>
+	</div>
+	<div class="col-12">
+		<h3 class="text-center mx-auto my-4 text-danger"><strong>PROXIMAMENTE</strong></h3>
+	</div>
+	
+</div>
+
+
+
+
+
+
+</div>
+<!--Footer --> <footer class="bg-light text-center text-lg-start "> <!-- PATROCINADORES --> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable  ">  <!--fixed-bottom--> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable text-center p-3"> <span class="h3 d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">Instituciones Patrocinadoras</span> <span class="h4  d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">Instituciones Patrocinadoras</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable p-3"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable p-1"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable m-auto text-center"> <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 float-left margin-enable p-1"> <img src="Patrocinadores/v1.png" class="img-fluid"> </div> <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 float-left margin-enable p-1"> <img src="Patrocinadores/v2.png" class="img-fluid"> </div> <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 float-left margin-enable p-1"> <img src="Patrocinadores/v4.png" class="img-fluid"> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable p-1"> <img src="Patrocinadores/v5.png" class="img-fluid"> </div> </div> </div> </div> <!-- Footer --> <footer class="bg-light text-center text-lg-start"> <!-- Copyright --> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable pl-4 pr-4 pt-1 pb-1 text-center bg-diego2"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable p-1 text-center"> <img src="Logo/v2.png" height="35px"> <span class="h6 text-white"> Todos los derechos Resevados Reactivación Laboral 2020</span> </div> </div> </div> <!-- Grid container --> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable bg-footer p-1 text-center "> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><i class="far fa-envelope"></i> contactenos@reactivacionlaboral.com</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable  p-1"> <span class="h6 text-blue-dark"><i class="fas fa-map-marker-alt"></i> Con presencia a nivel nacional</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable pr-1"> <span class="h6 text-blue-dark"><i class="fas fa-phone"></i> +57 3153907092</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable"> <span class="h6 text-blue-dark"><a href="https://api.whatsapp.com/send?phone=573138423487" class="text-blue-dark text-none" target="_blank"><i class="fab fa-whatsapp"></i> +57 3138423487</a></span> </div> </div> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="#" class="text-blue-dark text-none" target="_blank"><i class="fas fa-users"></i> ¿Quiénes Somos?</a></span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="#" class="text-blue-dark text-none" target="_blank"><i class="far fa-question-circle"></i> Preguntas Frecuentes</a></span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="PDF/TyC_Reactivacion_LaboralV01.pdf" class="text-blue-dark text-none" target="_blank"><i class="fas fa-file-contract"></i> Términos y Condiciones</a></span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="PDF/Datos_politicasyprocedimientos_datospersonalesV01.pdf" class="text-blue-dark text-none" target="_blank"><i class="fas fa-file-contract"></i> Políticas y Procedimientos</a></span> </div> </div> </div> </div> </footer> <!-- Footer -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

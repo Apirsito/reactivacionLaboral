@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+</head>
+<body>
+	<!--HEADER--> <div class="container-fluid "> <nav class="navbar navbar-expand-md navbar-light"> <a class="navbar-brand" href="index.html"><img src="logo.jpg" width="80" height="80"  class="d-inline-block mx-5 my-2" alt=""></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse"> <ul class="navbar-nav mx-md-2"> <li class="nav-item my-auto"> <a class="btn btn-sm btn-primary bg-azul-2 border border-white btn-block " href="index.html">inicio</a> </li> <li class="nav-item mx-2"> <a class="nav-link btn-block btn" href="encuentraProfesional.html" style="color: #1a3761">Profesionales</a> </li> <li class="nav-item mx-2"> <a class="nav-link btn-block btn" href="encuentraPublicaProducto.html" style="color: #1a3761">Productos</a> </li> <li class="nav-item mx-2"> <a class="nav-link btn-block btn" href="revisar.html" style="color: #1a3761">BLOG</a> </li> <li class="nav-item mx-2"> <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"class="btn badge-pill bg-azul-2 border border-white  text-white btn-block">Ingresar</button> </li> <li class="nav-item mx-2"> <button type="button" data-toggle="modal" data-target="#exampleModal5" data-whatever="@mdo"class="btn badge-pill bg-diego border border-white  text-white btn-block">Registrarse</button> </li> <div class="dropdown"> <button class="btn dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Idioma </button> <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item bandera1" href="#">ESP</a> <a class="dropdown-item bandera2" href="#">ENG</a> </div> </div> </ul> </div> </nav> </div> <!--- modal--ingreso---> <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog modal-xl"> <div class="modal-content m-0 p-0"> <div class="modal-body m-0 p-0"> <div class="container m-0 p-0"> <div class="row col-12 bg-light m-0 p-0 "> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5"><br> <div class="row col-md-8 mx-auto mt-5 justify-content-md-start justify-content-center "> <div class="text-center mt-5"> <h3 class="titulo-4 ">Inicio de sesión</h3> </div> <form id="frmLogin" name="frmLogin"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable text-left pb-2 pl-1 pr-1"> <label class="h6 red font-bold">Usuario</label> <input type="text" id="txtUsername" name="txtUsername" class="form-control form-control-sm" placeholder="Usuario"> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable text-left pb-2 pl-1 pr-1"> <label class="h6 font-bold ">Contraseña</label> <input type="password" id="txtPassword" name="txtPassword" class="form-control form-control-sm" placeholder="Contraseña"> </div> </form> </div> <div class="row col-12 align-items-center mx-auto"> <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 btn-group align-items-center "> <a href=""><img src="img/botonG.png" class="img-fluid"></a> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 btn-group align-items-center "> <a href=""><img src="img/botonF.png" class="img-fluid"></a> </div> </div> <div class="row justify-content-center"> <div class="col-7"> <a href="perfilUltimo.html" class="col-12 btn btn-block boton mt-2 mx-auto py-2" name="btnLogin" >INGRESAR</a> </div> </div> <div class="row"> <div class="col-12 text-center mt-3"> Olvidaste tu contraseña? <button type="button" class="btn btn-sm  h6 font-bold   text-warning" data-toggle="modal" data-target="#exampleModal4">Click aqui </button> </div> <div class="col-12 text-center mb-4"> No tienes cuenta? <a href="#"><span class="btn-sm  h6 font-bold  text-warning" data-toggle="modal" data-target="#exampleModal5"> Registrate</span></a> </div> </div> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-none d-md-block bg-login"> </div> </div> </div> </div> </div> </div> </div> <!-- modal recuperar contraseña--> <!-- Modal --> <div class="modal fade " id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog modal-lg  modal-dialog-centered " role="document"> <div class="modal-content border-0 shadow"> <div class="modal-header bg-diego2 text-white"> <h5 class="modal-title" id="exampleModalLabel">Recuperar contraseña</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="text-white" aria-hidden="true">&times;</span> </button> </div> <div class="modal-body"> <form> <div class="form-group row"> <label for="inputEmail3" class="col-md-4 col-form-label titulo-4">Correo electronico</label> <div class="col-md-8"> <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> </div> </div> </form> <h6 class="titulo-4"> se enviara un link a su correo para la recuperación de la contraseña</h6> </div> <div class="modal-footer"> <button type="button" class="btn btn-sm text-white bg-diego2 mx-auto text-center px-2" data-dismiss="modal">Enviar</button> </div> </div> </div> </div> <!--cierra modal recuperar contraseña--> <!--- modal--Registro---> <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog modal-xl"> <div class="modal-content m-0 p-0"> <div class="modal-header m-0 p-0"> <div class="modal-title" id="exampleModalLabel"><img src="img/datosPersonales.png" class="img-fluid "> </div> <button type="button" class="close my-md-auto mx-2" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div> <div class="modal-body m-0 p-0"> <div class="container m-0 p-0"> <div class="tab-content" id="pills-tabContent"> <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab"> <!--Registro--> <div > <div class="container"> <div class="row "> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 my-5"> <div class="row justify-content-center"> <form class="col-10" id="frmLogin" name="frmLogin"> <div class="text-center mb-4 mt-5"> <h2 class="titulo-4">REGISTRO</h2> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Nombres</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 "> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Apellidos</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Correo electronico</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Celular</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3">											    <label for="exampleFormControlSelect1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Tipo de usuario</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <select class="form-control" id="exampleFormControlSelect1"> <option></option> <option> proveedores de productos sst</option> <option> proveedores de servicios sst</option> <option> Tecnologos/técnicos SST</option> <option> Empresas que requieren cumplir con el sst</option> </select> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Usuario</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputPassword3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center ">Contraseña</label> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"> <input type="password" class="form-control" id="inputPassword3"> </div> </div> <div class="row col-12 align-items-center mx-auto"> <div class="col-12 col-xs-12 col-sm-12 col-md-122 col-lg-6 col-xl-6 btn-group align-items-center mx-auto my-1"> <a href="" class="btn-block"><img src="img/botonG.png" class="img-fluid"></a> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-122 col-lg-6 col-xl-6 btn-group align-items-center mx-auto my-1"> <a href=""><img src="img/botonF.png" class="img-fluid"></a> </div> </div> </form> </div> <div class="row mt-2 justify-content-end mr-3"> <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label border border-info" for="customCheck1">Acepto terminos y condiciones</label> </div> </div> <div class="row justify-content-end mr-3"> <div class="col-5"> <button data-toggle="modal" data-target="#exampleModalDatos" class=" nav-link tabs btn btn-block btn-default boton mt-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false"  name="btnLogin">Continuar <span class="glyphicon glyphicon-search"></span> </button> </div> </div> </div> <div class="col-none col-xs-none col-sm-none col-md-12 col-lg-5 col-xl-5 bg-login-r"> </div> </div> </div> </div> <!--cierra registro--> <!-- Modal --> <div class="modal fade" id="exampleModalDatos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-header  bg-diego2"> <h5 class="modal-title text-white" id="exampleModalLabel">Completa tus datos</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div> <div class="modal-body"> <form class="col-10 mx-auto" id="frmLogin" name="frmLogin"> <div class="text-center mb-4 mt-5 mx-auto"> <h4 class="titulo-4 ">ya estas a un paso de terminar tu registro, termina estos campos</h4> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Pais</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 "> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Departamento</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Ciudad</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3"> <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Genero</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> <div class="text-right row mb-3">											    <label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center ">Dominio</label> <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> <input type="email" class="form-control" id="inputEmail3"> </div> </div> </form> </div> <div class="modal-footer"> <button type="button" class="btn bg-diego2 text-white">Aceptar</button> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <!--- cierra modal--Registro---> <!--TERMINA EL HEADER -->
+
+	<!--modales -->
+	<!--modal seguimiento-->
+	<!-- Modal -->
+	<div class="modal fade  " id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-diego2">
+					<h5 class="modal-title text-white" id="exampleModalLabel">Seguimiento actividad</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-10 mx-auto my-3">
+
+
+
+
+
+
+							<form  id="frmLogin" name="frmLogin" class="titulo-5">
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center" >Fase</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8  text-left">
+										<div id="#faseActividad">PLANEAR</div>
+									</div>
+								</div>
+								<div class="text-right row mb-3 border-bottom  border-dark pb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Numeral <br> estandar</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8  text-left">
+										<div id="#preguntaActividad">Pregunta: 1.1.1 Responsable del Sistema de Gestión de
+										Seguridad y Salud en el Trabajo SG-SST</div>
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Actividad
+									</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<input type="email" class="form-control" id="inputEmail3" value="Conseguir profesional SST" disabled>
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Responsable</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<input type="email" class="form-control" id="inputEmail3" placeholder="Catalina" value="Catalina" disabled>
+									</div>
+								</div>
+								
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Peridiocidad</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<select class="form-control" id="exampleFormControlSelect1">
+											<option selected="true" disabled></option>
+											<option>Mensual</option>
+											<option>Bimestral</option>
+											<option>Trimestral</option>
+											<option>Semestral</option>
+											<option>Anual</option>
+										</select>
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Planeado</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 text-gray text-left">
+										Señale con una "X" el mes o los meses en que planea realizar la
+										actividad según la periodicidad
+
+
+
+
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-2 " >
+
+											<div class="table-responsive" >
+
+												<table class="table table-bordered">
+													<thead class="thead">
+														<tr>
+
+
+
+															<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+															<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+															<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+															<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+															<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+															<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+															<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+															<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+															<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+															<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+															<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr >
+
+
+															<td class="p-3"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+
+
+														</tr>
+
+													</tbody>
+												</table>
+
+											</div>
+
+										</div>
+
+
+
+
+
+
+
+
+									</div>
+
+								</div>
+
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Ejecutado</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 text-gray text-left">
+										señale con una "X" el mes o los meses donde Ejecuto la
+										actividad según la periodicidad
+
+
+
+
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-2 " >
+
+											<div class="table-responsive" >
+
+												<table class="table table-bordered">
+													<thead class="thead">
+														<tr>
+
+
+
+															<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+															<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+															<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+															<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+															<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+															<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+															<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+															<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+															<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+															<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+															<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr >
+
+
+															<td class="p-3"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+
+
+														</tr>
+
+													</tbody>
+												</table>
+
+											</div>
+
+										</div>
+
+
+
+
+
+
+
+
+									</div>
+
+								</div>
+
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Observaciones / comentarios</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<div class="form-floating">
+											<textarea placeholder="(opcional)" class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+
+										</div>
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Evidencia</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="customFileLang" lang="es">
+											<label class="custom-file-label text-left" for="customFileLang">(opcional)</label>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center"></label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<div class="form-floating">
+											<textarea placeholder="descripcion de la evidencia (opcional)" class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+
+										</div>
+										*Recuerde tener evidencias de la actividad en su organización
+									</div>
+
+								</div>
+
+
+							</form>
+
+
+
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn boton bg-danger text-white" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn boton bg-diego2 text-white" data-dismiss="modal">Guardar</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--termina modal-->
+	<!--termina modal seguimiento-->
+
+
+
+	<!--comienza modal de agregar actividad-->
+
+	<!-- Modal -->
+	<div class="modal fade  " id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-diego2">
+					<h5 class="modal-title text-white" id="exampleModalLabel">Agregar actividad</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-10 mx-auto my-3">
+
+
+
+
+
+
+							<form  id="frmLogin" name="frmLogin" class="titulo-5">
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center" >Fase</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8  text-left">
+										<div id="#faseActividad">PLANEAR</div>
+									</div>
+								</div>
+								<div class="text-right row mb-3 border-bottom  border-dark pb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Numeral <br> estandar</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8  text-left">
+										<div id="#preguntaActividad">Pregunta: 1.1.1 Responsable del Sistema de Gestión de
+										Seguridad y Salud en el Trabajo SG-SST</div>
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Actividad
+									</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<input type="email" class="form-control" id="inputEmail3" placeholder="Conseguir profesional SST">
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Responsable</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<input type="email" class="form-control" id="inputEmail3" placeholder="Catalina">
+									</div>
+								</div>
+								
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Peridiocidad</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<select class="form-control" id="exampleFormControlSelect1">
+											<option selected="true" disabled></option>
+											<option>Mensual</option>
+											<option>Bimestral</option>
+											<option>Trimestral</option>
+											<option>Semestral</option>
+											<option>Anual</option>
+										</select>
+									</div>
+								</div>
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Planeado</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 text-gray text-left">
+										Señale con una "X" el mes o los meses en que planea realizar la
+										actividad según la periodicidad
+
+
+
+
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-2 " >
+
+											<div class="table-responsive" >
+
+												<table class="table table-bordered">
+													<thead class="thead">
+														<tr>
+
+
+
+															<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+															<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+															<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+															<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+															<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+															<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+															<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+															<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+															<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+															<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+															<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr >
+
+
+															<td class="p-3"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+
+
+														</tr>
+
+													</tbody>
+												</table>
+
+											</div>
+
+										</div>
+
+
+
+
+
+
+
+
+									</div>
+
+								</div>
+
+								<div class="text-right row mb-3">
+									<label for="inputEmail3" class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">Observaciones / comentarios</label>
+									<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+										<div class="form-floating">
+											<textarea class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+
+										</div>
+									</div>
+								</div>
+							</form>
+
+
+
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn boton bg-danger text-white" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn boton bg-diego2 text-white" data-dismiss="modal">Guardar</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--termina modal de agregar actividad-->
+
+
+
+
+
+
+
+
+
+
+	<div class="container bg-light">
+
+		<div class="row">
+			<div class=" d-lg-flex justify-content-center p-3">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mx-auto my-auto text-center">
+					<strong><h3>vive seguro</h3></strong>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+
+					Bienvenido al módulo de evaluación inicial de la Plataforma Reactivación Laboral. si quieres
+					conocer los demás módulos ingrese ahora mismo a este link www.reactivacionlaboral.com
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-11 border border-secondary bg-white mx-auto mb-5">
+				<div class="row titulo-1 p-3  ">
+					<div class="border-bottom border-secondary d-md-flex p-3 justify-content-center mx-auto">
+						<div class="text-center">
+							<button class="btn bg-diego2 text-white my-1 mx-md-5 px-5 py-2"><strong> Volver</strong></button>
+						</div>
+						<strong class="text-center"><h2>Plan de mejoramiento SG-SST</h2></strong>
+						<div class="text-center">
+							<button class="btn  my-1 mx-md-5  boton"><strong> Generar informe</strong></button>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+				<div class="row  justify-content-between mx-auto col-11">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  text-lg-left text-center">
+						<strong>NIT</strong> 123456789
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  text-center">
+						<strong>Empresa</strong> Vive seguro
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  text-lg-right text-center">
+						<strong>Empleados</strong>2021
+					</div>
+					
+
+				</div>
+
+
+				<div class="row  justify-content-center mx-auto col-11 mb-3">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-3 text-lg-left text-center">
+						<strong>Nivel de riesgo</strong> 500
+					</div>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-3 text-lg-right text-center">
+						<strong>Año</strong>2021
+					</div>
+					
+
+				</div>
+
+
+				<div class="row d-md-flex justify-content-between p-3 col-12 mx-1 ">
+
+
+
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-auto"><button type="button" class="btn boton btn-sm btn-block" data-toggle="modal" data-target="#modal2">
+						Agregar actividad >
+					</button></div>
+
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5   text-center"><a href="medicionYSeguimientoPlanDeMejoramiento.html" class="btn btn-sm boton btn-block " name="btnLogin">Ver medición y seguimiento plan de mejoramiento</a></div>
+
+				</div>
+
+
+
+
+
+
+
+				<!--navbar pills-->
+				<div class="container titulo-5 ">
+					<div class="col-12 bg-diego2 text-white p-2 mx-auto text-center border border-dark">
+						Cronograma
+					</div>
+					<ul class="nav nav-pills mb-0 border border-dark bg-light text-center d-flex justify-content-center " id="pills-tab" role="tablist">
+						<li class="nav-item p-0 flex-fill">
+							<a class="nav-link active tabs border border-dark rounded-0" id="pills-home2-tab" data-toggle="pill" href="#home2" role="tab" aria-controls="pills-home2" aria-selected="true">Planear</a>
+						</li>
+						<li class="nav-item p-0 flex-fill">
+							<a class="nav-link  tabs border border-dark rounded-0" id="pills-profile2-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false">Hacer</a>
+						</li>	
+						<li class="nav-item p-0 flex-fill">
+							<a class="nav-link tabs border border-dark rounded-0" id="pills-profile3-tab" data-toggle="pill" href="#pills-profile3" role="tab" aria-controls="pills-profile3" aria-selected="false">Verificar</a>
+						</li>	
+						<li class="nav-item p-0 flex-fill">
+							<a class="nav-link tabs border border-dark rounded-0" id="pills-profile4-tab" data-toggle="pill" href="#pills-profile4" role="tab" aria-controls="pills-profile4" aria-selected="false">Actuar</a>
+						</li>		
+					</ul>
+					<div class="col-12  mx-auto text-center d-md-flex border border-dark p-0">
+
+						<div class="border border-dark col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-1">
+							Intervencion
+						</div>
+
+						<div class="border border-dark col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-1">
+							Periodo 2021	
+						</div>
+
+
+					</div>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home">
+							<!--Registro-->
+
+
+
+							<div class="row">
+
+								<div class="d-md-flex col-12 p-0">
+
+
+
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+
+										<div class="table-responsive border border-dark mb-5 over" >
+
+											<table class="table table-bordered ">
+												<thead class="thead">
+													<tr>
+														<th scope="col" class="minimo text-center align-middle" >Numeral </th>
+														<th scope="col" class="align-middle minimo text-center">Actividad</th>
+														
+
+														<th scope="col" class="azulTabla text-white align-middle">Mes</th>
+														<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+														<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+														<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+														<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+														<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+														<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+														<th scope="col" class="align-middle">%Cumplimiento Acctividad</th>
+														<th scope="col" class="align-middle">%Cumplimiento Fase</th>
+														<th scope="col" class="align-middle">Responsable</th>
+														<th scope="col" class="align-middle">Evidencia</th>
+														<th scope="col" class="align-middle">Observaciones</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.1 Responsable
+															del Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo SG-SST
+																</div>
+															</div>
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.2
+															Responsabilidades en el
+															Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																
+															Pregunta: 1.1.3 Asignación
+															de recursos para el
+															Sistema de Gestión en
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+							<!--cierra registro-->
+						</div>
+						<div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+
+
+
+
+							<!--Registro-->
+
+
+
+														<div class="row">
+
+								<div class="d-md-flex col-12 p-0">
+
+
+
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+
+										<div class="table-responsive border border-dark mb-5 over" >
+
+											<table class="table table-bordered ">
+												<thead class="thead">
+													<tr>
+														<th scope="col" class="minimo text-center align-middle" >Numeral </th>
+														<th scope="col" class="align-middle minimo text-center">Actividad</th>
+														
+
+														<th scope="col" class="azulTabla text-white align-middle">Mes</th>
+														<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+														<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+														<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+														<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+														<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+														<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+														<th scope="col" class="align-middle">%Cumplimiento Acctividad</th>
+														<th scope="col" class="align-middle">%Cumplimiento Fase</th>
+														<th scope="col" class="align-middle">Responsable</th>
+														<th scope="col" class="align-middle">Evidencia</th>
+														<th scope="col" class="align-middle">Observaciones</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.1 Responsable
+															del Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo SG-SST
+																</div>
+															</div>
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.2
+															Responsabilidades en el
+															Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																
+															Pregunta: 1.1.3 Asignación
+															de recursos para el
+															Sistema de Gestión en
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+							<!--cierra registro-->
+
+
+
+
+
+
+
+
+						</div>
+
+						<div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
+
+
+
+
+														<div class="row">
+
+								<div class="d-md-flex col-12 p-0">
+
+
+
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+
+										<div class="table-responsive border border-dark mb-5 over" >
+
+											<table class="table table-bordered ">
+												<thead class="thead">
+													<tr>
+														<th scope="col" class="minimo text-center align-middle" >Numeral </th>
+														<th scope="col" class="align-middle minimo text-center">Actividad</th>
+														
+
+														<th scope="col" class="azulTabla text-white align-middle">Mes</th>
+														<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+														<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+														<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+														<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+														<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+														<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+														<th scope="col" class="align-middle">%Cumplimiento Acctividad</th>
+														<th scope="col" class="align-middle">%Cumplimiento Fase</th>
+														<th scope="col" class="align-middle">Responsable</th>
+														<th scope="col" class="align-middle">Evidencia</th>
+														<th scope="col" class="align-middle">Observaciones</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.1 Responsable
+															del Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo SG-SST
+																</div>
+															</div>
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.2
+															Responsabilidades en el
+															Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																
+															Pregunta: 1.1.3 Asignación
+															de recursos para el
+															Sistema de Gestión en
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+							<!--cierra registro-->
+
+
+						</div>
+
+
+						<div class="tab-pane fade" id="pills-profile4" role="tabpanel" aria-labelledby="pills-profile4-tab">
+													<div class="row">
+
+								<div class="d-md-flex col-12 p-0">
+
+
+
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " >
+
+										<div class="table-responsive border border-dark mb-5 over" >
+
+											<table class="table table-bordered ">
+												<thead class="thead">
+													<tr>
+														<th scope="col" class="minimo text-center align-middle" >Numeral </th>
+														<th scope="col" class="align-middle minimo text-center">Actividad</th>
+														
+
+														<th scope="col" class="azulTabla text-white align-middle">Mes</th>
+														<th scope="col" class="azulTabla text-white align-middle" >EN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >FEB</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAR</th>
+														<th scope="col" class="azulTabla text-white align-middle" >MAY</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUN</th>
+														<th scope="col" class="azulTabla text-white align-middle" >JUL</th>
+														<th scope="col" class="azulTabla text-white align-middle" >AG</th>
+														<th scope="col" class="azulTabla text-white align-middle" >SEP</th>
+														<th scope="col" class="azulTabla text-white align-middle" >OCT</th>
+														<th scope="col" class="azulTabla text-white align-middle" >NOV</th>
+														<th scope="col" class="azulTabla text-white align-middle" >DIC</th>
+
+														<th scope="col" class="align-middle">%Cumplimiento Acctividad</th>
+														<th scope="col" class="align-middle">%Cumplimiento Fase</th>
+														<th scope="col" class="align-middle">Responsable</th>
+														<th scope="col" class="align-middle">Evidencia</th>
+														<th scope="col" class="align-middle">Observaciones</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.1 Responsable
+															del Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo SG-SST
+																</div>
+															</div>
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																	Pregunta: 1.1.2
+															Responsabilidades en el
+															Sistema de Gestión de
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+															
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														<td rowspan="6" class="align-middle text-center">
+
+
+															<div class="row">
+																
+																<div class="my-auto ml-4">
+																	<input type="checkbox">
+																</div>
+																<div class="col-10">
+																
+															Pregunta: 1.1.3 Asignación
+															de recursos para el
+															Sistema de Gestión en
+															Seguridad y Salud en el
+															Trabajo – SG-SST
+																</div>
+															</div>
+
+
+
+														</td>
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+														
+														
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<!--comienza modal del seguimiento-->
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+
+
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+													<tr >
+														
+														<th scope="row" rowspan="2" class="align-middle text-center">Realizar una evaluacion anual del Sistema
+														de Gestion en SST</th>
+
+
+														<td class="bg-danger text-center">P</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+
+														<td></td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2" class="align-middle text-center"> 0%</td>
+														<td rowspan="2"></td>
+														<td rowspan="2"> </td>
+														<td rowspan="2"> </td>
+														<td rowspan="2">
+
+															<button type="button" class="btn btn-sm btn-block bg-diego text-white my-1" data-toggle="modal" data-target="#modal3">
+																<strong>Seguimiento</strong>
+															</button>
+															<button class="btn btn-sm btn-block bg-diego2 text-white my-1"><strong>Eliminar</strong></button>
+														</td>
+													</tr>
+													<tr >
+														<td class="bg-success text-center">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+
+
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+							<!--cierra registro-->
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer --> <footer class="bg-light text-center text-lg-start "> <!-- PATROCINADORES --> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable  ">  <!--fixed-bottom--> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable text-center p-3"> <span class="h3 d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">Instituciones Patrocinadoras</span> <span class="h4  d-block d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">Instituciones Patrocinadoras</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable p-3"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable p-1"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable m-auto text-center"> <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 float-left margin-enable p-1"> <img src="Patrocinadores/v1.png" class="img-fluid"> </div> <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 float-left margin-enable p-1"> <img src="Patrocinadores/v2.png" class="img-fluid"> </div> <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 float-left margin-enable p-1"> <img src="Patrocinadores/v4.png" class="img-fluid"> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable p-1"> <img src="Patrocinadores/v5.png" class="img-fluid"> </div> </div> </div> </div> <!-- Footer --> <footer class="bg-light text-center text-lg-start"> <!-- Copyright --> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable pl-4 pr-4 pt-1 pb-1 text-center bg-diego2"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable p-1 text-center"> <img src="Logo/v2.png" height="35px"> <span class="h6 text-white"> Todos los derechos Resevados Reactivación Laboral 2020</span> </div> </div> </div> <!-- Grid container --> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable bg-footer p-1 text-center "> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><i class="far fa-envelope"></i> contactenos@reactivacionlaboral.com</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable  p-1"> <span class="h6 text-blue-dark"><i class="fas fa-map-marker-alt"></i> Con presencia a nivel nacional</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable pr-1"> <span class="h6 text-blue-dark"><i class="fas fa-phone"></i> +57 3153907092</span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable"> <span class="h6 text-blue-dark"><a href="https://api.whatsapp.com/send?phone=573138423487" class="text-blue-dark text-none" target="_blank"><i class="fab fa-whatsapp"></i> +57 3138423487</a></span> </div> </div> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left margin-enable"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="#" class="text-blue-dark text-none" target="_blank"><i class="fas fa-users"></i> ¿Quiénes Somos?</a></span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="#" class="text-blue-dark text-none" target="_blank"><i class="far fa-question-circle"></i> Preguntas Frecuentes</a></span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 float-left margin-enable p-1"> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="PDF/TyC_Reactivacion_LaboralV01.pdf" class="text-blue-dark text-none" target="_blank"><i class="fas fa-file-contract"></i> Términos y Condiciones</a></span> </div> <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left margin-enable p-1"> <span class="h6 text-blue-dark"><a href="PDF/Datos_politicasyprocedimientos_datospersonalesV01.pdf" class="text-blue-dark text-none" target="_blank"><i class="fas fa-file-contract"></i> Políticas y Procedimientos</a></span> </div> </div> </div> </div> </footer> <!-- Footer -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/propio.js"></script>
+</body>
+</html>
